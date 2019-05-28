@@ -57,5 +57,4 @@ task buildApkCheckJar(type: Copy, dependsOn: [build, jar]) {
     into(project.file("tools_output"))
 }
 
-apply from: rootProject.file('gradle/java-publish.gradle')
 

@@ -10,5 +10,3 @@ dependencies {
     implementation 'commons-io:commons-io:2.6'
 }
 
-
-apply from: rootProject.file('gradle/java-publish.gradle')
