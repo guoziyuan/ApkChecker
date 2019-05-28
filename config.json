@@ -1,0 +1,67 @@
+{
+  "--apk":"/Users/syswin/Documents/project/tmail-project/msgseal/build/outputs/apk/release/msgseal-release.apk",
+  "--output":"/Users/syswin/Documents/project/tmail-project/msgseal/build/outputs/apk/release/",
+  "--format":"mm.html,mm.json",
+  "--formatConfig":
+  [
+    {
+      "name":"-countMethod",
+      "group":
+      [
+        {
+          "name":"Android System",
+          "package":"android"
+        },
+        {
+          "name":"java system",
+          "package":"java"
+        },
+        {
+          "name":"com.msgseal.$",
+          "package":"com.msgseal.$"
+        }
+      ]
+    }
+  ],
+  "options": [
+    {
+      "name":"-manifest"
+    },
+    {
+      "name":"-fileSize",
+      "--min":"10",
+      "--order":"desc",
+      "--suffix":"png, jpg, jpeg, gif, arsc"
+    },
+    {
+      "name":"-countMethod",
+      "--group":"package"
+    },
+    {
+      "name":"-findNonAlphaPng",
+      "--min":"10"
+    },
+    {
+      "name":"-uncompressedFile",
+      "--suffix":"png, jpg, jpeg, gif, arsc"
+    },
+    {
+      "name":"-duplicatedFile"
+    },
+    {
+      "name":"-unusedResources",
+      "--rTxt":"/Users/syswin/Documents/project/tmail-project/msgseal/build/intermediates/symbols/release/R.txt",
+      "--ignoreResources"
+      :["R.raw.*",
+        "R.style.*",
+        "R.attr.*",
+        "R.id.*",
+        "R.string.ignore_*"
+      ]
+    },
+    {
+      "name":"-unusedAssets",
+      "--ignoreAssets":["*.so" ]
+    }
+  ]
+}
