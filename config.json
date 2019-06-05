@@ -1,6 +1,6 @@
 {
-  "--apk":"/Users/syswin/Documents/project/tmail-project/msgseal/build/outputs/apk/release/msgseal-release.apk",
-  "--output":"/Users/syswin/Documents/project/tmail-project/msgseal/build/outputs/apk/release/",
+  "--apk":"/Users/syswin/Documents/project/tmail-project/msgseal/build/outputs/apk/debug/msgseal-debug.apk",
+  "--output":"/Users/syswin/Documents/project/tmail-project/msgseal/build/outputs/apk/debug/",
   "--format":"mm.html,mm.json",
   "--formatConfig":
   [
@@ -50,7 +50,7 @@
     },
     {
       "name":"-unusedResources",
-      "--rTxt":"/Users/syswin/Documents/project/tmail-project/msgseal/build/intermediates/symbols/release/R.txt",
+      "--rTxt":"/Users/syswin/Documents/project/tmail-project/msgseal/build/intermediates/symbols/debug/R.txt",
       "--ignoreResources"
       :["R.raw.*",
         "R.style.*",
