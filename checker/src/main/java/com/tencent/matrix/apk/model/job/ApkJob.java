@@ -328,7 +328,12 @@ public final class ApkJob {
                 } else {
                     readConfigFile(configPath);
                 }
-
+                if (globalParams.containsKey(JobConstants.PARAM_BUILD_NO)) {
+                    String buildNo = globalParams.get(JobConstants.PARAM_BUILD_NO);
+                    if (!Util.isNullOrNil(buildNo)) {
+                        jobConfig.setBuildNo(Integer.parseInt(buildNo));
+                    }
+                }
             } else {
 
                 String apkPath = "";

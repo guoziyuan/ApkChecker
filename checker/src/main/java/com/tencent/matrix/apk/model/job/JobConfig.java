@@ -28,7 +28,7 @@ import java.util.Map;
  */
 
 public final class JobConfig {
-
+    private int buildNo;
     private String inputDir;
     private String apkPath;
     private String unzipPath;
@@ -137,6 +137,13 @@ public final class JobConfig {
 
     public void setOutputConfig(JsonArray outputConfig) {
         this.outputConfig = outputConfig;
+    }
+    public int getBuildNo() {
+        return buildNo;
+    }
+
+    public void setBuildNo(int buildNo) {
+        this.buildNo = buildNo;
     }
 
 }

@@ -29,6 +29,7 @@ public abstract class TaskResult {
     protected String startTime;
     protected String endTime;
     public final int taskType;
+    public int buildNumber;
 
     public TaskResult(int taskType) {
         this.taskType = taskType;

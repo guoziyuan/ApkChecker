@@ -73,6 +73,7 @@ public final class TaskResultFactory {
         } else {
             result = new TaskHtmlResult(taskType, taskConfig);
         }
+        result.buildNumber = config.getBuildNo();
         return result;
     }
 

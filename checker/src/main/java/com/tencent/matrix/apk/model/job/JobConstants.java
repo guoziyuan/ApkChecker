@@ -24,6 +24,7 @@ public final class JobConstants {
 
 
     public static final String PARAM_CONFIG = "--config";
+    public static final String PARAM_BUILD_NO = "--buildNo";
     public static final String PARAM_INPUT = "--input";
     public static final String PARAM_APK = "--apk";
     public static final String PARAM_UNZIP = "--unzip";
