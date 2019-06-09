@@ -29,6 +29,7 @@ import java.util.Map;
 
 public final class JobConfig {
     private int buildNo;
+    private String url;
     private String inputDir;
     private String apkPath;
     private String unzipPath;
@@ -144,6 +145,13 @@ public final class JobConfig {
 
     public void setBuildNo(int buildNo) {
         this.buildNo = buildNo;
+    }
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
 }

@@ -42,7 +42,6 @@ import java.util.Collections;
  */
 
 public class JobJsonResult extends JobResult {
-    private final String URL = "http://localhost:8081/javaweb_war_exploded/DengluServlet";
     private static final String TAG = "JobJsonResult";
 
     private final File outputFile;
@@ -124,7 +123,7 @@ public class JobJsonResult extends JobResult {
                     if (taskResult.getResult() != null && taskResult.getResult() instanceof JsonObject) {
                         writeJsonElement((JsonObject) taskResult.getResult());
                         String result = doPost(taskResult);
-                        Log.d(TAG,result);
+                        Log.i(TAG,result);
                     }
                 }
             }
@@ -138,7 +137,7 @@ public class JobJsonResult extends JobResult {
         JsonObject jb= (JsonObject) taskResult.getResult();
         String parameterData = "taskType="+taskResult.taskType+"&param="+jb.toString()+"&buildNumber="+taskResult.buildNumber;
 
-        URL localURL = new URL(URL);
+        URL localURL = new URL(taskResult.url);
         URLConnection connection = localURL.openConnection();
         HttpURLConnection httpURLConnection = (HttpURLConnection)connection;
 

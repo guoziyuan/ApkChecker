@@ -334,6 +334,12 @@ public final class ApkJob {
                         jobConfig.setBuildNo(Integer.parseInt(buildNo));
                     }
                 }
+                if (globalParams.containsKey(JobConstants.PARAM_URL)) {
+                    String url = globalParams.get(JobConstants.PARAM_URL);
+                    if (!Util.isNullOrNil(url)) {
+                        jobConfig.setUrl(url);
+                    }
+                }
             } else {
 
                 String apkPath = "";

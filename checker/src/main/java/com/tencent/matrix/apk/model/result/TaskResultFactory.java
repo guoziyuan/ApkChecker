@@ -74,6 +74,7 @@ public final class TaskResultFactory {
             result = new TaskHtmlResult(taskType, taskConfig);
         }
         result.buildNumber = config.getBuildNo();
+        result.url = config.getUrl();
         return result;
     }
 
