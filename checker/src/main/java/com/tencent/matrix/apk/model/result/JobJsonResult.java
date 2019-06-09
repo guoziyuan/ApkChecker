@@ -122,8 +122,10 @@ public class JobJsonResult extends JobResult {
                 for (TaskResult taskResult : resultList) {
                     if (taskResult.getResult() != null && taskResult.getResult() instanceof JsonObject) {
                         writeJsonElement((JsonObject) taskResult.getResult());
-                        String result = doPost(taskResult);
-                        Log.i(TAG,result);
+                        //while(taskResult.taskType ==2){
+                            String result = doPost(taskResult);
+                            Log.i(TAG,result);
+                        //}
                     }
                 }
             }

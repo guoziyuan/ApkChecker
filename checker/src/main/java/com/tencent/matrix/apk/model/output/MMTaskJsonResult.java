@@ -192,7 +192,9 @@ public class MMTaskJsonResult extends TaskJsonResult {
         if (manifest.has("package")) {
             attribute.put("package", manifest.get("package").getAsString());
         }
-
+        if (manifest.has("size")) {
+            attribute.put("size", manifest.get("size").getAsString());
+        }
         if (manifest.has("android:versionCode")) {
             attribute.put("android:versionCode", manifest.get("android:versionCode").getAsString());
         }
