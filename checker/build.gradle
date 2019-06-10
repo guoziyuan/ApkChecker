@@ -23,7 +23,7 @@ project.afterEvaluate {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'com.tencent.matrix.apk.ApkChecker'
+        attributes 'Main-Class': 'com.syswin.apk.ApkChecker'
         attributes 'Manifest-Version': version
     }
     from {

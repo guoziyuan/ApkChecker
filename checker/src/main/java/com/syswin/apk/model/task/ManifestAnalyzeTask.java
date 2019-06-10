@@ -1,0 +1,102 @@
+/*
+ * Tencent is pleased to support the open source community by making wechat-matrix available.
+ * Copyright (C) 2018 THL A29 Limited, a Tencent company. All rights reserved.
+ * Licensed under the BSD 3-Clause License (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://opensource.org/licenses/BSD-3-Clause
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.syswin.apk.model.task;
+
+import com.google.gson.JsonObject;
+import com.syswin.apk.model.exception.TaskExecuteException;
+import com.syswin.apk.model.exception.TaskInitException;
+import com.syswin.apk.model.job.JobConfig;
+import com.syswin.apk.model.result.TaskJsonResult;
+import com.syswin.apk.model.result.TaskResult;
+import com.syswin.apk.model.result.TaskResultFactory;
+import com.syswin.apk.model.task.util.ApkConstants;
+import com.syswin.apk.model.task.util.ManifestParser;
+import com.syswin.javalib.util.FileUtil;
+import com.syswin.javalib.util.Log;
+import com.syswin.javalib.util.Util;
+
+import java.io.File;
+import java.util.Map;
+
+import static com.syswin.apk.model.result.TaskResultFactory.TASK_RESULT_TYPE_JSON;
+import static com.syswin.apk.model.task.TaskFactory.TASK_TYPE_MANIFEST;
+
+/**
+ * Created by zhengmin on 18/5/27.
+ */
+
+public class ManifestAnalyzeTask extends ApkTask {
+
+    private static final String TAG = "ManifestAnalyzeTask";
+
+    private File inputFile;
+    private File arscFile;
+    private File apkFile;
+
+    public ManifestAnalyzeTask(JobConfig config, Map<String, String> params) {
+        super(config, params);
+        type = TASK_TYPE_MANIFEST;
+    }
+
+    @Override
+    public void init() throws TaskInitException {
+        super.init();
+        String inputPath = config.getUnzipPath();
+        if (Util.isNullOrNil(inputPath)) {
+            throw new TaskInitException(TAG + "---APK-UNZIP-PATH can not be null!");
+        }
+        apkFile = new File(config.getApkPath());
+        if (!apkFile.exists()) {
+            throw new TaskInitException(TAG + "---'" + config.getApkPath() + "' is not exist!");
+        }
+        Log.i(TAG, "inputPath:%s", inputPath);
+        inputFile = new File(inputPath, ApkConstants.MANIFEST_FILE_NAME);
+        if (!inputFile.exists()) {
+            throw new TaskInitException(TAG + "---Manifest file '" + inputPath + File.separator + ApkConstants.MANIFEST_FILE_NAME + "' is not exist!");
+        }
+
+        arscFile = new File(inputPath, ApkConstants.ARSC_FILE_NAME);
+    }
+
+    @Override
+    public TaskResult call() throws TaskExecuteException {
+        try {
+//            BigDecimal bd= new BigDecimal(apkFile.length()/(float)1048576);
+//            bd = bd.setScale(2,BigDecimal.ROUND_HALF_UP);
+            ManifestParser manifestParser = null;
+            if (!FileUtil.isLegalFile(arscFile)) {
+                manifestParser = new ManifestParser(inputFile);
+            } else {
+                manifestParser = new ManifestParser(inputFile, arscFile);
+            }
+            TaskResult taskResult = TaskResultFactory.factory(getType(), TASK_RESULT_TYPE_JSON, config);
+            if (taskResult == null) {
+                return null;
+            }
+            long startTime = System.currentTimeMillis();
+            JsonObject jsonObject = manifestParser.parse();
+            jsonObject.addProperty("size",apkFile.length()/(float)(1024*1024));
+            Log.d(TAG, jsonObject.toString());
+            ((TaskJsonResult) taskResult).add("manifest", jsonObject);
+            taskResult.setStartTime(startTime);
+            taskResult.setEndTime(System.currentTimeMillis());
+            return taskResult;
+        } catch (Exception e) {
+            throw new TaskExecuteException(e.getMessage(), e);
+        }
+    }
+}
