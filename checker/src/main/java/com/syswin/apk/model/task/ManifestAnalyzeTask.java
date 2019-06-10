@@ -75,8 +75,7 @@ public class ManifestAnalyzeTask extends ApkTask {
     @Override
     public TaskResult call() throws TaskExecuteException {
         try {
-//            BigDecimal bd= new BigDecimal(apkFile.length()/(float)1048576);
-//            bd = bd.setScale(2,BigDecimal.ROUND_HALF_UP);
+
             ManifestParser manifestParser = null;
             if (!FileUtil.isLegalFile(arscFile)) {
                 manifestParser = new ManifestParser(inputFile);
