@@ -17,13 +17,13 @@
 package com.tencent.matrix.apk.model.task;
 
 import com.google.gson.JsonObject;
-import com.tencent.matrix.apk.model.task.util.ApkConstants;
 import com.tencent.matrix.apk.model.exception.TaskExecuteException;
 import com.tencent.matrix.apk.model.exception.TaskInitException;
 import com.tencent.matrix.apk.model.job.JobConfig;
 import com.tencent.matrix.apk.model.result.TaskJsonResult;
 import com.tencent.matrix.apk.model.result.TaskResult;
 import com.tencent.matrix.apk.model.result.TaskResultFactory;
+import com.tencent.matrix.apk.model.task.util.ApkConstants;
 import com.tencent.matrix.apk.model.task.util.ManifestParser;
 import com.tencent.matrix.javalib.util.FileUtil;
 import com.tencent.matrix.javalib.util.Log;
@@ -41,7 +41,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_MANIFEST;
 
 public class ManifestAnalyzeTask extends ApkTask {
 
-    private static final String TAG = "Matrix.ManifestAnalyzeTask";
+    private static final String TAG = "ManifestAnalyzeTask";
 
     private File inputFile;
     private File arscFile;
@@ -75,6 +75,8 @@ public class ManifestAnalyzeTask extends ApkTask {
     @Override
     public TaskResult call() throws TaskExecuteException {
         try {
+//            BigDecimal bd= new BigDecimal(apkFile.length()/(float)1048576);
+//            bd = bd.setScale(2,BigDecimal.ROUND_HALF_UP);
             ManifestParser manifestParser = null;
             if (!FileUtil.isLegalFile(arscFile)) {
                 manifestParser = new ManifestParser(inputFile);
@@ -87,7 +89,7 @@ public class ManifestAnalyzeTask extends ApkTask {
             }
             long startTime = System.currentTimeMillis();
             JsonObject jsonObject = manifestParser.parse();
-            jsonObject.addProperty("size",apkFile.length());
+            jsonObject.addProperty("size",apkFile.length()/(float)1048576);
             Log.d(TAG, jsonObject.toString());
             ((TaskJsonResult) taskResult).add("manifest", jsonObject);
             taskResult.setStartTime(startTime);

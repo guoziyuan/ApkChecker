@@ -52,7 +52,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_UNZIP;
 
 public class UnzipTask extends ApkTask {
 
-    private static final String TAG = "Matrix.UnZipTask";
+    private static final String TAG = "UnZipTask";
 
     @SuppressWarnings("PMD")
     private File inputFile;

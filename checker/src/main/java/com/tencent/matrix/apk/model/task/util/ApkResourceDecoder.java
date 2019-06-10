@@ -60,7 +60,7 @@ import brut.androlib.res.xml.ResValuesXmlSerializable;
 @SuppressWarnings("PMD")
 public class ApkResourceDecoder {
 
-    private static final String TAG = "Matrix.ApkResourceDecoder";
+    private static final String TAG = "ApkResourceDecoder";
 
     public static final String PROPERTY_SERIALIZER_INDENTATION = "http://xmlpull.org/v1/doc/properties.html#serializer-indentation";
     public static final String PROPERTY_SERIALIZER_LINE_SEPARATOR = "http://xmlpull.org/v1/doc/properties.html#serializer-line-separator";

@@ -51,7 +51,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_COUNT_CLAS
 
 public class CountClassTask extends ApkTask {
 
-    private static final String TAG = "Matrix.CountClassTask";
+    private static final String TAG = "CountClassTask";
 
     private File inputFile;
     private String group = JobConstants.GROUP_PACKAGE;

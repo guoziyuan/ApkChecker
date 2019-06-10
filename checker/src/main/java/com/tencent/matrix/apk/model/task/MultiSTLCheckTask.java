@@ -48,7 +48,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_CHECK_MULT
 
 public class MultiSTLCheckTask extends ApkTask {
 
-    private static final String TAG = "Matrix.MultiSTLCheckTask";
+    private static final String TAG = "MultiSTLCheckTask";
 
     private File libDir;
     private String toolnmPath;

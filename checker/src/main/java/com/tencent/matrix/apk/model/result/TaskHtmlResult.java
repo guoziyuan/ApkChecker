@@ -34,7 +34,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 public class TaskHtmlResult extends TaskResult {
 
-    private static final String TAG = "Matrix.TaskHtmlResult";
+    private static final String TAG = "TaskHtmlResult";
 
     protected final Document document;
 

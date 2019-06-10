@@ -38,7 +38,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_CHECK_MULT
 
 public class MultiLibCheckTask extends ApkTask {
 
-    private static final String TAG = "Matrix.MultiLibCheckTask";
+    private static final String TAG = "MultiLibCheckTask";
 
     private File libDir;
 

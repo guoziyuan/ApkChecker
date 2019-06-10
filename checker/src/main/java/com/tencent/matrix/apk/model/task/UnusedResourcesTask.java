@@ -60,7 +60,7 @@ import brut.androlib.AndrolibException;
 
 public class UnusedResourcesTask extends ApkTask {
 
-    private static final String TAG = "Matrix.UnusedResourcesTask";
+    private static final String TAG = "UnusedResourcesTask";
 
     private File inputFile;
     private File resourceTxt;

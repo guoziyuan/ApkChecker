@@ -48,7 +48,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_UNSTRIPPED
 
 public class UnStrippedSoCheckTask extends ApkTask {
 
-    private static final String TAG = "Matrix.UnStrippedSoCheckTask";
+    private static final String TAG = "UnStrippedSoCheckTask";
 
     private File libDir;
     private String toolnmPath;

@@ -36,7 +36,7 @@ import brut.androlib.res.decoder.ResStreamDecoder;
 
 public class XmlPullResourceRefDecoder implements ResStreamDecoder {
 
-    private static final String TAG = "Matrix.XmlPullResourceRefDecoder";
+    private static final String TAG = "XmlPullResourceRefDecoder";
 
     private final Set<String> resourceRefSet = new HashSet<>();
     private final XmlPullParser mParser;

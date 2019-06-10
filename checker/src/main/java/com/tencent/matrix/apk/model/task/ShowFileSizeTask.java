@@ -49,7 +49,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_SHOW_FILE_
 
 public class ShowFileSizeTask extends ApkTask {
 
-    private static final String TAG = "Matrix.ShowFileSizeTask";
+    private static final String TAG = "ShowFileSizeTask";
     private File inputFile;
     private String order = JobConstants.ORDER_DESC;
     private long             downLimit;

@@ -50,7 +50,7 @@ import java.util.Set;
 
 public class UnusedAssetsTask extends ApkTask {
 
-    private static final String TAG = "Matrix.UnusedAssetsTask";
+    private static final String TAG = "UnusedAssetsTask";
 
     private File inputFile;
     private final List<String> dexFileNameList;

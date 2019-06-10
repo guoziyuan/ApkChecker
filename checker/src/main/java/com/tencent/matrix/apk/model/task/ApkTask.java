@@ -33,7 +33,7 @@ import java.util.concurrent.Callable;
 
 public abstract class ApkTask implements Callable<TaskResult> {
 
-    private static final String TAG = "Matrix.ApkTask";
+    private static final String TAG = "ApkTask";
 
     protected int type;
     protected JobConfig config;

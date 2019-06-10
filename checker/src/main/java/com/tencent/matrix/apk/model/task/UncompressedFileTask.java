@@ -45,7 +45,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_UNCOMPRESS
 
 public class UncompressedFileTask extends ApkTask {
 
-    private static final String TAG = "Matrix.UncompressedFileTask";
+    private static final String TAG = "UncompressedFileTask";
 
     private File inputFile;
     private Set<String> filterSuffix;

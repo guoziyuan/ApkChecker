@@ -46,7 +46,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_COUNT_R_CL
 
 public class CountRTask extends ApkTask {
 
-    private static final String TAG = "Matrix.CountRTask";
+    private static final String TAG = "CountRTask";
 
     private File inputFile;
     private final List<String> dexFileNameList;

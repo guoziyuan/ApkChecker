@@ -37,7 +37,7 @@ import javax.xml.parsers.ParserConfigurationException;
  */
 
 public final class TaskResultFactory {
-    private static final String TAG = "Matrix.TaskResultFactory";
+    private static final String TAG = "TaskResultFactory";
 
     public static final String TASK_RESULT_TYPE_JSON = "json";
     public static final String TASK_RESULT_TYPE_HTML = "html";

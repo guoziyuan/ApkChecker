@@ -46,7 +46,7 @@ import java.util.Map;
 
 public class DuplicateFileTask extends ApkTask {
 
-    private static final String TAG = "Matrix.DuplicateFileTask";
+    private static final String TAG = "DuplicateFileTask";
 
     private File inputFile;
     private Map<String, List<String>> md5Map;

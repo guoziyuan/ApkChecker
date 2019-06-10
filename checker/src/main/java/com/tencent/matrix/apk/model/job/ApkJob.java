@@ -60,7 +60,7 @@ import java.util.jar.Manifest;
 
 public final class ApkJob {
 
-    private static final String TAG = "Matrix.ApkJob";
+    private static final String TAG = "ApkJob";
 
     private String[] args;
     private JobConfig jobConfig;

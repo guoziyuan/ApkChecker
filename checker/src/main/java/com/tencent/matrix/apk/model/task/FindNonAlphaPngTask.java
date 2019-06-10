@@ -50,7 +50,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_FIND_NON_A
 
 public class FindNonAlphaPngTask extends ApkTask {
 
-    private static final String TAG = "Matrix.FindNonAlphaPngTask";
+    private static final String TAG = "FindNonAlphaPngTask";
 
     private File inputFile;
     private List<Pair<String, Long>> nonAlphaPngList;

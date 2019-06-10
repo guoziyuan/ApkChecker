@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
 
 public class ApkUtil {
 
-    private static final String TAG = "Matrix.ApkUtil";
+    private static final String TAG = "ApkUtil";
 
 
     /*

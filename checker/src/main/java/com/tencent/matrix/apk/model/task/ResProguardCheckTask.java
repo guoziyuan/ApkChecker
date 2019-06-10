@@ -39,7 +39,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_CHECK_RESG
 
 public class ResProguardCheckTask extends ApkTask {
 
-    private static final String TAG = "Matrix.ResProguardCheckTask";
+    private static final String TAG = "ResProguardCheckTask";
 
     private File inputFile;
     private Pattern fileNamePattern;
