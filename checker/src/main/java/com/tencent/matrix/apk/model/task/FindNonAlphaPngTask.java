@@ -45,7 +45,7 @@ import javax.imageio.ImageIO;
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_FIND_NON_ALPHA_PNG;
 
 /**
- * Created by jinqiuchen on 17/6/12.
+ * Created by zhengmin on 18/6/12.
  */
 
 public class FindNonAlphaPngTask extends ApkTask {

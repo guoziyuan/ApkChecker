@@ -40,7 +40,7 @@ import java.util.Set;
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_UNCOMPRESSED_FILE;
 
 /**
- * Created by jinqiuchen on 17/6/21.
+ * Created by zhengmin on 18/6/21.
  */
 
 public class UncompressedFileTask extends ApkTask {

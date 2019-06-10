@@ -37,7 +37,7 @@ import java.util.Set;
 import javax.xml.parsers.ParserConfigurationException;
 
 /**
- * Created by jinqiuchen on 17/8/15.
+ * Created by zhengmin on 18/8/15.
  */
 
 public class MMTaskJsonResult extends TaskJsonResult {

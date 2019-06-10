@@ -17,7 +17,7 @@
 package com.tencent.matrix.apk.model.job;
 
 /**
- * Created by jinqiuchen on 17/6/14.
+ * Created by zhengmin on 18/6/14.
  */
 
 public final class JobConstants {

@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by jinqiuchen on 17/6/15.
+ * Created by zhengmin on 18/6/15.
  */
 
 public final class JobConfig {

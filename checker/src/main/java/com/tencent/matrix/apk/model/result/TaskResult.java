@@ -21,7 +21,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * Created by jinqiuchen on 17/5/23.
+ * Created by zhengmin on 18/5/23.
  */
 @SuppressWarnings("PMD")
 public abstract class TaskResult {

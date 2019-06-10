@@ -41,7 +41,7 @@ import java.util.Map;
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_COUNT_R_CLASS;
 
 /**
- * Created by jinqiuchen on 17/6/22.
+ * Created by zhengmin on 18/6/22.
  */
 
 public class CountRTask extends ApkTask {

@@ -21,7 +21,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 /**
- * Created by jinqiuchen on 17/7/4.
+ * Created by zhengmin on 18/7/4.
  */
 
 public class Log {

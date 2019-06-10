@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 
 /**
- * Created by jinqiuchen on 17/5/23.
+ * Created by zhengmin on 18/5/23.
  */
 
 public abstract class ApkTask implements Callable<TaskResult> {

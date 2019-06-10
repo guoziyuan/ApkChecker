@@ -19,7 +19,7 @@ package com.tencent.matrix.apk.model.result;
 import java.util.Map;
 
 /**
- * Created by jinqiuchen on 17/9/1.
+ * Created by zhengmin on 18/9/1.
  */
 
 public abstract class TaskResultRegistry {

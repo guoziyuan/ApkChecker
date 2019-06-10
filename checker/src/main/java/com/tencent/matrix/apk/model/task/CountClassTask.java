@@ -46,7 +46,7 @@ import java.util.Set;
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_COUNT_CLASS;
 
 /**
- * Created by jinqiuchen on 17/11/13.
+ * Created by zhengmin on 18/11/13.
  */
 
 public class CountClassTask extends ApkTask {

@@ -20,7 +20,7 @@ import com.tencent.matrix.apk.model.job.ApkJob;
 import com.tencent.matrix.apk.model.job.JobConstants;
 
 /**
- * Created by jinqiuchen on 17/5/23.
+ * Created by zhengmin on 18/5/23.
  */
 
 public final class ApkChecker {

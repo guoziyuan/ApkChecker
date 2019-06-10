@@ -55,7 +55,7 @@ import brut.androlib.AndrolibException;
 
 
 /**
- * Created by jinqiuchen on 17/7/11.
+ * Created by zhengmin on 18/7/11.
  */
 
 public class UnusedResourcesTask extends ApkTask {

@@ -47,7 +47,7 @@ import static com.tencent.matrix.apk.model.result.TaskResultFactory.TASK_RESULT_
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_UNZIP;
 
 /**
- * Created by jinqiuchen on 17/5/23.
+ * Created by zhengmin on 18/5/23.
  */
 
 public class UnzipTask extends ApkTask {

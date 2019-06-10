@@ -29,7 +29,7 @@ import java.io.IOException;
 import java.util.Stack;
 
 /**
- * Created by jinqiuchen on 17/11/13.
+ * Created by zhengmin on 18/11/13.
  */
 
 public class ManifestParser {

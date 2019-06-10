@@ -33,7 +33,7 @@ import static com.tencent.matrix.apk.model.result.TaskResultFactory.TASK_RESULT_
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_CHECK_MULTILIB;
 
 /**
- * Created by jinqiuchen on 17/6/20.
+ * Created by zhengmin on 18/6/20.
  */
 
 public class MultiLibCheckTask extends ApkTask {

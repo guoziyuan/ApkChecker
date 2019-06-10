@@ -29,7 +29,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 /**
- * Created by jinqiuchen on 17/5/31.
+ * Created by zhengmin on 18/5/31.
  */
 
 public class TaskHtmlResult extends TaskResult {

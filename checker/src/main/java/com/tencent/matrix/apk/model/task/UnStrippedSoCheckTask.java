@@ -43,7 +43,7 @@ import static com.tencent.matrix.apk.model.result.TaskResultFactory.TASK_RESULT_
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_UNSTRIPPED_SO;
 
 /**
- * Created by jinqiuchen on 17/6/29.
+ * Created by zhengmin on 18/6/29.
  */
 
 public class UnStrippedSoCheckTask extends ApkTask {

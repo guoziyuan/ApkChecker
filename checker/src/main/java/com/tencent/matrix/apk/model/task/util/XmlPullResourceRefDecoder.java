@@ -31,7 +31,7 @@ import brut.androlib.AndrolibException;
 import brut.androlib.res.decoder.ResStreamDecoder;
 
 /**
- * Created by jinqiuchen on 17/8/28.
+ * Created by zhengmin on 18/8/28.
  */
 
 public class XmlPullResourceRefDecoder implements ResStreamDecoder {

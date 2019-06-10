@@ -38,7 +38,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * Created by jinqiuchen on 17/6/13.
+ * Created by zhengmin on 18/6/13.
  */
 
 public class JobJsonResult extends JobResult {

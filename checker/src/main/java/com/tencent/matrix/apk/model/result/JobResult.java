@@ -20,7 +20,7 @@ package com.tencent.matrix.apk.model.result;
 import java.util.List;
 
 /**
- * Created by jinqiuchen on 17/6/13.
+ * Created by zhengmin on 18/6/13.
  */
 @SuppressWarnings("PMD")
 public abstract class JobResult {

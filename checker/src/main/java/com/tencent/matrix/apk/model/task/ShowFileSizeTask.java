@@ -44,7 +44,7 @@ import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_SHOW_FILE_
 
 
 /**
- * Created by jinqiuchen on 17/6/1.
+ * Created by zhengmin on 18/6/1.
  */
 
 public class ShowFileSizeTask extends ApkTask {

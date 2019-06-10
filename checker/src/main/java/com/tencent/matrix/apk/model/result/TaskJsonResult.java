@@ -25,7 +25,7 @@ import com.tencent.matrix.javalib.util.Util;
 import javax.xml.parsers.ParserConfigurationException;
 
 /**
- * Created by jinqiuchen on 17/5/23.
+ * Created by zhengmin on 18/5/23.
  */
 
 public class TaskJsonResult extends TaskResult {

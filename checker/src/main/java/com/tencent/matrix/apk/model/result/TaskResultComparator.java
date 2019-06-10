@@ -22,7 +22,7 @@ import com.tencent.matrix.apk.model.task.TaskFactory;
 import java.util.Comparator;
 
 /**
- * Created by jinqiuchen on 17/12/23.
+ * Created by zhengmin on 18/12/23.
  */
 
 public class TaskResultComparator implements Comparator<TaskResult> {

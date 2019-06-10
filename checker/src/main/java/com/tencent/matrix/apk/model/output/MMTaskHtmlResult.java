@@ -29,7 +29,7 @@ import java.util.Map;
 import javax.xml.parsers.ParserConfigurationException;
 
 /**
- * Created by jinqiuchen on 17/8/4.
+ * Created by zhengmin on 18/8/4.
  */
 
 public class MMTaskHtmlResult extends TaskHtmlResult {

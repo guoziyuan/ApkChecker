@@ -48,7 +48,7 @@ import brut.androlib.res.util.ExtMXSerializer;
 import brut.androlib.res.xml.ResValuesXmlSerializable;
 
 /**
- * Created by jinqiuchen on 17/7/13.
+ * Created by zhengmin on 18/7/13.
  * This decoder is used to decode binary resources (xml files and resources.arsc) in apk.
  * We use the ApkTool
  * <p>

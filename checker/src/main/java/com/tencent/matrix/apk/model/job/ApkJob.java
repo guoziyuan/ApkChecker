@@ -55,7 +55,7 @@ import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
 /**
- * Created by jinqiuchen on 17/6/5.
+ * Created by zhengmin on 18/6/5.
  */
 
 public final class ApkJob {

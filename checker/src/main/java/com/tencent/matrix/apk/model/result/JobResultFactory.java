@@ -19,7 +19,7 @@ package com.tencent.matrix.apk.model.result;
 import com.tencent.matrix.apk.model.job.JobConfig;
 
 /**
- * Created by jinqiuchen on 17/6/13.
+ * Created by zhengmin on 18/6/13.
  */
 
 public final class JobResultFactory {

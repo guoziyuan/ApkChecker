@@ -36,7 +36,7 @@ import static com.tencent.matrix.apk.model.result.TaskResultFactory.TASK_RESULT_
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_MANIFEST;
 
 /**
- * Created by jinqiuchen on 17/5/27.
+ * Created by zhengmin on 18/5/27.
  */
 
 public class ManifestAnalyzeTask extends ApkTask {

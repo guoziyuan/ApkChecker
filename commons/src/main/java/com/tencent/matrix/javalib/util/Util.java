@@ -19,7 +19,7 @@ package com.tencent.matrix.javalib.util;
 import java.util.regex.Pattern;
 
 /**
- * Created by jinqiuchen on 17/7/4.
+ * Created by zhengmin on 18/7/4.
  */
 
 public final class Util {

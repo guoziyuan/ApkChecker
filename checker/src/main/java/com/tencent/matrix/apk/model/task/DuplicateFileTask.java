@@ -41,7 +41,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by jinqiuchen on 17/6/27.
+ * Created by zhengmin on 18/6/27.
  */
 
 public class DuplicateFileTask extends ApkTask {

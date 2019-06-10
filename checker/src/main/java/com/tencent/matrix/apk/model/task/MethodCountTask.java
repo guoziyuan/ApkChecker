@@ -50,7 +50,7 @@ import static com.tencent.matrix.apk.model.result.TaskResultFactory.TASK_RESULT_
 import static com.tencent.matrix.apk.model.task.TaskFactory.TASK_TYPE_COUNT_METHOD;
 
 /**
- * Created by jinqiuchen on 17/6/1.
+ * Created by zhengmin on 18/6/1.
  */
 
 public class MethodCountTask extends ApkTask {

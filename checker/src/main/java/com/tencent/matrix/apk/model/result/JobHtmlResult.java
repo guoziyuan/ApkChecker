@@ -34,7 +34,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 /**
- * Created by jinqiuchen on 17/6/13.
+ * Created by zhengmin on 18/6/13.
  */
 
 public class JobHtmlResult extends JobResult {

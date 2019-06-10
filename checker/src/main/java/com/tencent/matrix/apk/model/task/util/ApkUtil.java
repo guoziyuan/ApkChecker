@@ -32,7 +32,7 @@ import java.io.Writer;
 import java.util.regex.Pattern;
 
 /**
- * Created by jinqiuchen on 17/11/13.
+ * Created by zhengmin on 18/11/13.
  */
 
 public class ApkUtil {
