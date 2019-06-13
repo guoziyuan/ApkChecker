@@ -33,7 +33,7 @@ import java.util.Map;
 import javax.xml.parsers.ParserConfigurationException;
 
 /**
- * Created by zhangshaowen on 17/6/12.
+ * Created by zhengmin on 18/6/12.
  */
 
 public final class TaskResultFactory {
